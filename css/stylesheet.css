@@ -1,0 +1,55 @@
+body{
+    background-color: #DCBEB6;
+    max-width: 1200px;
+    margin: auto
+}
+
+    header{
+        color:red;
+        width: 300px;
+        position: fixed;
+        top: 50px;
+        left: 25px;
+}
+
+nav{
+    background-color: blueviolet;
+    width: 300px; 
+    position: fixed;
+    top: 300px;
+    left: 25px;
+}
+
+main {
+    width: 650px;
+    margin: 500px;
+}
+
+section {
+    border: 1px blue solid;
+    margin-top: 25px;
+    text-align: center;
+    padding: 15px;
+}
+
+section img {
+    border: 1px blue solid;
+    padding: 25px;
+}
+
+
+footer{
+        background-color: fuchsia;
+        width: 300px;
+        position: fixed;
+        bottom: 50px;
+        left: 25px;
+
+    } 
+        
+#splashgif {
+text-align:center;
+margin-top: 25%;
+}
+
+
