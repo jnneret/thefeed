@@ -1,7 +1,13 @@
+
+  @import url("https://use.typekit.net/vmw5lyb.css");
+
 body{
     background-color: #DCBEB6;
     max-width: 1200px;
-    margin: auto
+    margin: auto;
+    font-family: "futura-pt-condensed", sans-serif;
+font-weight: 500;
+font-style: normal;
 }
 
     header{
@@ -22,7 +28,7 @@ nav{
 
 main {
     width: 650px;
-    margin: 500px;
+   margin-left: 500px;
 }
 
 section {
@@ -48,11 +54,25 @@ footer{
     } 
         
 #splashgif {
+margin:auto;
 text-align:center;
-margin-top: 25%;
+margin-top: 13%;
+width: 500px;
 }
 
 #welcome{
     text-decoration: none;
+    font-family: "futura-pt-condensed", sans-serif;
+font-weight: 800;
+font-style: normal;
+background-color: #FFFC19;
 }
 
+nav h5:hover{
+background-color: yellow;
+text-decoration: none;
+}
+
+#splash{
+    background-color: #FFFC19;
+}
