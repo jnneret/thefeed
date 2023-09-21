@@ -1,4 +1,4 @@
-body{ background-color: brown;
+body{ background-color: #620000;
 } 
     header{
     width: 300px;
@@ -8,7 +8,6 @@ body{ background-color: brown;
 }
 
 nav{
-    background-color: blueviolet;
     width: 300px; 
     position: fixed;
     top: 300px;
@@ -17,7 +16,6 @@ nav{
 
 nav h5:hover{
     background-color: yellow;
-    text-decoration: none;
     }
     
 
@@ -48,9 +46,10 @@ display: block;
 }
 
 .image-grid{
-    --gap: 50px;
+    --gap: 150px;
     --num-cols: 2;
-    --row--height: 600px;
+    --row--height: 550px;
+    right: 100px;
 
     box-sizing: border-box;
     padding: var(--gap);
@@ -77,6 +76,11 @@ display: block;
 
 #pictwo{
     border-radius: 10%;
+}
+
+h5{
+    text-decoration: none;
+    background-color: #FFFC19;
 }
 
 
