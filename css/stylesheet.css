@@ -14,15 +14,23 @@ nav{
     left: 25px;
 }
 
-nav h5:hover{
-    background-color: yellow;
-    }
+footer{
+    width: 300px;
+    position: fixed;
+    bottom: 50px;
+    left: 25px;
+} 
+
     
 
 section{
 display: flex;
 min-height: 100vh;
 }
+
+nav h5:hover{
+    background-color: yellow;
+    }
 
 .left, .right {
 flex: 1;
@@ -46,9 +54,67 @@ display: block;
 }
 
 .image-grid{
+    margin-left: 150px;
+    --gap: 150px;
+    --num-cols: 3;
+    --row--height: 300px;
+    right: 100px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row--height);
+    gap:var(--gap);
+    row-gap: var(--gap);
+
+}
+
+.image-grid1{
+    margin-left: 150px;
+    --gap: 150px;
+    margin-top: 100px;
+    --num-cols: 2;
+    --row--height: 600px;
+    right: 100px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row--height);
+    gap:var(--gap);
+    row-gap: var(--gap);
+
+}
+
+.image-grid2{
+    margin-left: 150px;
+    --gap: 250px;
+    --num-cols: 2;
+    margin-top: 100px;
+    --row--height: 500px;
+    right: 100px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row--height);
+    gap:var(--gap);
+    row-gap: var(--gap);
+
+}
+
+.image-grid3{
+    margin-left: 150px;
     --gap: 150px;
     --num-cols: 2;
-    --row--height: 550px;
+    margin-top: 100px;
+    --row--height: 600px;
     right: 100px;
 
     box-sizing: border-box;
@@ -70,7 +136,6 @@ display: block;
 }
 
 #picone{
-
     border-radius: 15%;
 }
 
@@ -80,17 +145,11 @@ display: block;
 
 h5{
     text-decoration: none;
-    background-color: #FFFC19;
     border-radius: 15%;
     text-align: center;
 }
 
-#JN{
-    border-radius: 100%;
-    width: 200px;
-    height: 300px;
-    background-color: red;
-}
+
 
 
 .left .inner .sticky {
@@ -113,13 +172,6 @@ position: absolute;
     float:left;
   }
 
-footer{
-    background-color: fuchsia;
-    width: 300px;
-    position: fixed;
-    bottom: 50px;
-    left: 25px;
-} 
 
 #splashgif {
     margin:auto;
