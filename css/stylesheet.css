@@ -1,21 +1,10 @@
-
-  @import url("https://use.typekit.net/vmw5lyb.css");
-
-body{
-    background-color: #DCBEB6;
-    max-width: 1200px;
-    margin: auto;
-    font-family: "futura-pt-condensed", sans-serif;
-font-weight: 500;
-font-style: normal;
-}
-
+body{ background-color: brown;
+} 
     header{
-        color:red;
-        width: 300px;
-        position: fixed;
-        top: 50px;
-        left: 25px;
+    width: 300px;
+    position: fixed;
+    top: 50px;
+    left: 25px;
 }
 
 nav{
@@ -26,53 +15,116 @@ nav{
     left: 25px;
 }
 
-main {
-    width: 650px;
-   margin-left: 500px;
+nav h5:hover{
+    background-color: yellow;
+    text-decoration: none;
+    }
+    
+
+section{
+display: flex;
+min-height: 100vh;
 }
 
-section {
-    border: 1px blue solid;
-    margin-top: 25px;
-    text-align: center;
-    padding: 15px;
+.left, .right {
+flex: 1;
 }
 
-section img {
-    border: 1px blue solid;
-    padding: 25px;
+.left{
+     left: 0;
+  width: 30%;
 }
 
+.left .inner {
+height: 100vh;
+display: block;
+}
+
+
+.right .inner{
+    right:0;
+    width: 60%
+      
+}
+
+.image-grid{
+    --gap: 50px;
+    --num-cols: 2;
+    --row--height: 600px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row--height);
+    gap:var(--gap);
+    row-gap: var(--gap);
+
+}
+
+.image-grid > img{
+
+    object-fit: cover;
+    border-radius: 15%;
+    
+}
+
+#picone{
+
+    border-radius: 15%;
+}
+
+#pictwo{
+    border-radius: 10%;
+}
+
+
+.left .inner .sticky {
+position: sticky;
+top: 0;
+}
+
+.left .inner .sticky .bg{
+position: absolute;
+}
+
+.item{
+    width:200px;
+    text-align:left;
+    display:block;
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin-right: 10px;
+    margin-bottom: 1px;
+    float:left;
+  }
 
 footer{
-        background-color: fuchsia;
-        width: 300px;
-        position: fixed;
-        bottom: 50px;
-        left: 25px;
+    background-color: fuchsia;
+    width: 300px;
+    position: fixed;
+    bottom: 50px;
+    left: 25px;
 
-    } 
-        
+} 
+
 #splashgif {
-margin:auto;
-text-align:center;
-margin-top: 13%;
-width: 500px;
-}
-
-#welcome{
-    text-decoration: none;
-    font-family: "futura-pt-condensed", sans-serif;
-font-weight: 800;
-font-style: normal;
-background-color: #FFFC19;
-}
-
-nav h5:hover{
-background-color: yellow;
-text-decoration: none;
-}
-
-#splash{
+    margin:auto;
+    text-align:center;
+    margin-top: 13%;
+    width: 500px;
+    }
+    
+    #welcome{
+        text-decoration: none;
+        font-family: "futura-pt-condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
     background-color: #FFFC19;
-}
+    }
+
+    #splash{
+        background-color: #FFFC19;
+    }
+    
